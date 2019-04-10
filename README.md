@@ -7,3 +7,7 @@ The attack is by default on WAN. For the attack to work, the attacker needs to e
 
 To do an attack on LAN, uncomment the respective line in RubberDucky.ino. On the attacker machine, run the command "nc VICTIMIP 10010". The victim Ip can be found using nmap. Look for hosts with port 10010 open. 
 
+
+The attack will grant access to the victim's command line. The connection will be reopened if the victim restarts his machine. 
+
+The RubberDucky only executes the attack once. To reset, upload the code reset_EEPROM.ino and wait until "reset" is typed on screen. Then upload RubberDucky.ino again.
