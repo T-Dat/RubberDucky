@@ -11,3 +11,4 @@ To do an attack on LAN, uncomment and comment the respective line in RubberDucky
 The attack will grant access to the victim's command line. The connection will be reopened if the victim restarts his machine. 
 
 The RubberDucky only executes the attack once. To reset, upload the code reset_EEPROM.ino and wait until "reset" is typed on screen. Then upload RubberDucky.ino again.
+
